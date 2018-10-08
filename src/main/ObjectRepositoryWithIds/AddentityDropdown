@@ -1,0 +1,9 @@
+{
+  "addEntityPersonButton": "//span[text()='Persona']",
+  "addEntityWeaponButton": "//span[text()='Arma']",
+  "addEntityActiveButton": "//span[text()='Inmueble']",
+  "addEntityTelephoneButton": "//span[text()='Teléfono']",
+  "addEntityVehicleButton": "//span[text()='Vehículo']",
+  "addEntityOrgButton": "//span[text()='Organización']"
+
+}

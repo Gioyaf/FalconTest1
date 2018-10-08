@@ -1,0 +1,23 @@
+{
+  "NameOfTheCommandment":"//SPAN[text()='Nombre del mandamiento:']/../..//INPUT",
+  "TypeOfTheCommandment":"//span[text()='Tipo:']/../../descendant::input[2]",
+  "SourceOfOriginOfTheCommandment":"//span[text()='Fuente de origen del mandamiento:']/../../descendant::input[2]",
+  "CommandStartInformation":"//SPAN[text()='Información de inicio del mandamiento:']/../..//TEXTAREA",
+  "resumen":"//label[text()='Resumen del mandamiento:']/following-sibling::TEXTAREA",
+  "applicationDate": "(//SPAN[text()='Fecha de solicitud:'])/../..//INPUT",
+  "receptionDate": "(//SPAN[text()='Fecha de recepción:'])/../..//INPUT",
+  "addFile": "//SPAN[text()='Agregar archivo']",
+  "addLog": "//SPAN[text()='Registro del caso']",
+  "addLogToOrder": "//span[text()='Registro del mandamiento']",
+  "addLegal": "//SPAN[text()='Legal']",
+  "LegalList": "//*[@data-test-component='ConnectTab(Connect(RenderEntitiesResults))']",
+  "EntitiesList": "//*[@id='root']/div/div[3]/div/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]",
+  "addLogTextArea": "//textarea[@placeholder='Insertar registro…']",
+  "addLogData": " //*[@id='root']/div/div[3]/div/div/div/div[2]/div/div[2]/div/div/div/div[2]/div/div[1]",
+  "addFileSearchBox": "//INPUT[@type='tel']",
+  "Nombre":"//*[@class='AssetEntity']/div/div/input",
+  "orderApplicationDate":"(//TD[@data-value='20'][text()='20'][text()='20'])[2]",
+  "saveTag":"//SPAN[text()='Editar etiquetas']",
+  "Tipo":"(//DIV[@class='Select-placeholder'][text()='Seleccionar'])[1]",
+  "Prioridad":"(//DIV[@class='Select-placeholder'][text()='Seleccionar'][text()='Seleccionar'])[2]"
+}

@@ -1,0 +1,8 @@
+{
+  "personCount":"(//div[@class='content']/div/span)",
+  "female":"//div[text()='Femenino']",
+  "male":"//div[text()='Masculino']",
+  "maleCount":"//div[text()='Masculino']/../..//SPAN[2]",
+  "femaleCount":"//div[text()='Femenino']/../..//SPAN[2]",
+  "resulteGrid": "//DIV[@class='ReactVirtualized__Grid ReactVirtualized__List']"
+}

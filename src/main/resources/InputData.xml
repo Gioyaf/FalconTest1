@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Person>
+    <PersonInfo>
+       <Name>Elad</Name>
+        <LastName>Or</LastName>
+    </PersonInfo>
+    <Map>
+        <Address>Mexico, Mexico, México, Naucalpan de juárez, Naucalpan de juárez Tegucigalpa</Address>
+        <Pais>Mexico</Pais>
+        <Estado>México</Estado>
+        <Delegacion>Nezahualcóyotl</Delegacion>
+        <Colonia>Ciudad Nezahualcóyotl</Colonia>
+        <Lat>19.425994</Lat>
+        <Long>-99.041372</Long>
+    </Map>
+    <Arma>
+        <Tipo>Ametralladora</Tipo>
+        <Marca>Adi</Marca>
+    </Arma>
+    <Activo>
+        <Nombre>Elad</Nombre>
+        <Tipo>Casa</Tipo>
+    </Activo>
+    <telefono>
+        <Numero>97250558877</Numero>
+    </telefono>
+    <Vehiculo>
+        <Matricula>6766676</Matricula>
+        <Tipo>Autobus</Tipo>
+    </Vehiculo>
+</Person>

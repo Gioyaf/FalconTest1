@@ -1,0 +1,17 @@
+{
+  "miButton"       : "//div[@title='Mi tablero']",
+  "mirandaButton"   : "//div[@title='Miranda Valentina']",
+  "javierButton" : "//div[@title='Javier Alejandro']",
+  "addShortcutButton" : "//span[@class='icon Icon__Icon-hlGpYz eTqAZH']",
+  "userToShow" : "//div[@class='SearchBox undefined ']",
+  "archive" : "//span[text()='Archivo']",
+  "folder" : "//span[text()='Carpeta']",
+  "linkInput" : "//input[@class='EntitySelection__InputCard-iebbvM dkIcma']",
+  "user45" : "//div[@title='user45_profile_image']",
+  "user44" : "//div[@title='user44_profile_image']",
+  "addButton" : "//span[text()='Agregar']",
+  "murderersFolder" : "//div[@title='Murderers in case 1231']",
+  "signOff" : "//span[text()='Cerrar sesión']",
+  "userLoggedIn" : "//span[@class='Icon__Icon-hlGpYz kRJKyP']",
+  "CasesOrdersRIPs" : "//div[starts-with(@class, 'DonutChart__MiddleDiv-hgSDap')]"
+}

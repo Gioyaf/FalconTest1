@@ -1,0 +1,16 @@
+{
+  "armaScreen": "//SPAN[text()='Nueva arma']",
+  "weaponType": "//span[text()='Tipo:']/../../descendant::input[2]",
+  "weaponSeries": "//*[text()='Número de serie:']/../../descendant::input",
+  "weaponMark": "//span[text()='Marca:']/../../descendant::input[2]",
+  "weaponId" : "//DIV[@class='entity-id']",
+  "model" : "//label[text()='Modelo:']/..//div",
+  "caliber" : "//label[text()='Calibre mm:']/..//div",
+  "description": "//label[text()='Descripción:']/../input",
+  "seriesView" : "//label[text()='Número de serie:']/..//span",
+  "typeView" : "//label[text()='Tipo:']/..//span",
+  "markView" : "//label[text()='Marca:']/..//span",
+  "modelView" : "//label[text()='Modelo:']/..//span",
+  "caliberView" : "//label[text()='Calibre mm:']/..//span",
+  "descriptionView" : "//label[text()='Descripción:']/..//span"
+}

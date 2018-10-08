@@ -1,0 +1,22 @@
+{
+  "organizationTitle": "//SPAN[text()='Nueva organización']",
+  "Registration":"//SPAN[text()='Nombre de compañía:']/../../input",
+  "Tipo":"//SPAN[text()='Tipo:']/../../descendant::input[2]",
+  "activeStatus" : "//label[text()='Estatus activo:']/..//div",
+  "numberOfMembers" : "//label[text()='Núm. de miembros:']/..//input",
+  "id" : "//label[text()='ID:']/..//input",
+  "activeFromDate" : "//label[text()='Activa desde:']/..//div",
+  "date" : "//th[@class='rdtSwitch']",
+  "year2018" : "//td[@data-value='2018']",
+  "jan" : "//td[@data-value='0']",
+  "first" : "//td[@data-value='1']",
+  "description" : "//label[text()='Descripción:']/..//textarea",
+  "companyNameView" : "//label[text()='Nombre de compañía:']/..//span",
+  "typeView" : "//label[text()='Tipo:']/..//span",
+  "activeStatusView" : "//label[text()='Estatus activo:']/..//span",
+  "numberOfMembersView" : "//label[text()='Núm. de miembros:']/..//span",
+  "idView" : "//label[text()='ID:']/..//span",
+  "activeFromView" : "//label[text()='Activa desde:']/..//span",
+  "organizationId" : "//DIV[@class='entity-id']",
+  "descriptionView" : "//label[text()='Descripción:']/..//pre"
+}

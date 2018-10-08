@@ -1,0 +1,12 @@
+{
+  "pmButton":"//*[text()='Plataforma México']",
+  "pmSearch":"//*[@data-test-component='ClearableInput']//input",
+  "pmDBSearch":"//span[@class='Select-arrow-zone']",
+  "pmSearchInDBButton":"//button[@data-test-translation-key='common.search']",
+  "pmUserName":"//*[@data-test-label='pmSearch.login.pmUserName'] [@data-test-component='TextInput']",
+  "pmPassword":"//*[@data-test-label='pmSearch.login.pmPassword'] [@data-test-component='TextInput']",
+  "pmLoginButton":"//button[@data-test-translation-key='common.login']",
+  "pmEquipoDB":"//*[contains(text(),'Registro Nacional de Armamento')]",
+  "pmForm":"//*[@data-test-component='Connect(ConnectTab(PmSearchDetails))']",
+  "pmDbFirstSearchResultsGrid":"//div[@class='ReactVirtualized__Grid__innerScrollContainer']//div[contains(@style,'top: 0')]"
+}

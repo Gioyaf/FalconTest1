@@ -1,0 +1,23 @@
+{
+  "addButton": "//div[(@data-test-translation-key='header.new')]",
+  "mainSearchField1": "//*[@id='root']/div/div[2]/div[4]/div[1]/div[1]/input",
+  "mainSearchFieldIcon": "//div[@data-test-translation-key='common.search']",
+  "mainSearchField": "//div[@class='ReactVirtualized__Grid ReactVirtualized__List']",
+  "mainSearchList": "//div[@class='search-content']",
+  "tabsOnMainToolbar1": "//div[@class='Tabs Flex__FlexColumns-dhFcCs cWxymQ']/a[num]/div",
+  "tabsOnMainToolbar": "//div[@data-test-component='Connect(Tabs)']/a[@data-test-index='num']",
+  "addEntityDropdown": "/ancestor::div[contains(@class,'Dropdown')]",
+  "addEntityEntidadMenu": "//span[text()='Entidad']",
+  "addEntityPersonButton": "//span[text()='Persona']",
+  "addEntityWeaponButton": "//span[text()='Arma']",
+  "addEntityActiveButton": "//span[text()='Activo']",
+  "addEntityTelephoneButton": "//span[text()='Teléfono']",
+  "addEntityVehicleButton": "//span[text()='Vehículo']",
+  "addEntityOrgButton": "//span[text()='Organización']",
+  "addNews": "//span[text()='Nueva noticia']",
+  "addOrder": "//span[text()='Nuevo mandamiento']",
+  "newCase": "//SPAN[text()='Nuevo caso']",
+  "tools" : "//span[@type='tools']",
+  "bi" : "//div[@data-test-translation-key='header.menu.businessIntelligence']",
+  "searchButton" : "//div[@data-test-translation-key='common.search']"
+}

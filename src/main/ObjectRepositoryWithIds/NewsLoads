@@ -1,0 +1,12 @@
+
+{
+"NewsItem": "//div[@data-test-component='FeedItemMainArea']",
+"SearchNewsItem": "//div[@class='TextWithEllipsis__TextToWidthEllipsis-eoEKNS gSrzGh']",
+"NewsItemHamburger": "//div[@class='icon Bar__MenuBarContainer-gASAhK jZgWuV']",
+"NewsItemHamburgerList": "//div[@class='PortalWithPosition__PortalWithPositionWrapper-dVhsAU dIaNob']"
+"NewsItemAdToCase": "//div[text()='Vincular al caso']",
+"CaseToAttach": "//div[text()='name of new stress case']",
+"CaseFromSearch": "//span[text()='name of new stress case']",
+"NewsItemFromBase": "//*[text()='load news']",
+
+}

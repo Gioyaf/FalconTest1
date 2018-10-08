@@ -1,0 +1,14 @@
+{
+  "cnacButton":"//*[@data-test-header='news.filter.tabs.ext'] //*[@data-test-component='InjectIntl(NewsBoxTab)']",
+  "cnacSearchButton":"//*[@data-test-component='Connect(ConnectTab(InjectIntl(_class2)))']",
+  "cnacSearchresulat":"//*[@data-test-component='FeedItemMainArea']",
+  "cnacSearchResultContainer":"//*[@data-test-component='BlockingLoader']//div//div",
+  "cnacCloseSearchResult":"//*[@type='close_15x15']",
+  "cnacTypeOfNewsField": "//*[@data-test-displayname='Tipo de noticia']/span",
+  "cnacSourceField":"//*[@data-test-translation-key='news.common.source']/span",
+  "cnaceEditButton":"//*[@data-test-type='edit']",
+  "cnacePublishButton":"//*[@data-test-id='newsDraftPublishButtonID']",
+  "newCnacSearchField":"//*[@data-test-translation-key='news.filter.cnacSearch']",
+  "cnacSearchField": "//*[@data-test-placeholder='Buscar']"
+
+}

@@ -1,0 +1,12 @@
+{
+  "ContrabandoDeDrogas" : "//span[contains(.,'Contrabando de drogas')]",
+  "caseByCrimeFilter" : "//span[@data-test-usersettingskey='caseByCrimeTypeCrimeCheckTypes']",
+  "ContrabandoDeDrogasCheckBox": "//input[@name='crime_type_4']",
+  "ContrabandoDeMercancía": "//input[@name='crime_type_24']",
+  "Aplicar": "//button[@data-test-translation-key='common.apply']",
+  "pieChartBtn": "//span[@type='chart-pie']",
+  "pieChartGraph": "//div[@class='amcharts-main-div'] [@style='position: relative; width: 100%; height: 100%;']",
+  "downLoadtBtn": "//span[@type='export-thin']",
+  "exportToCsv": "//div[@data-test-translation-key='bi.export.graph.csv']",
+  "user44Cases": "//*[contains(@aria-label, 'Casos abiertos Isabella Nicole')]"
+}

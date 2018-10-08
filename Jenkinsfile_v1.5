@@ -1,0 +1,124 @@
+#!groovy
+@Library('ws_jenkins_commons') _
+
+pipeline {
+    agent {label 'JenkinsWisdomStone_Win'}
+    parameters {
+        string(defaultValue: '10.32.5.73', description: 'Destination IP', name: 'SANITY_IP')
+        string(defaultValue: '', description: 'Use specific optional branch name,\n Currunt branches: v2.0 --> master \n v1.5 --> 1.5', name: 'OPTIONAL_BRANCH_TO_USE')
+        choice(choices: 'K8s\ndev', description: 'Choose deployment env type', name: 'DEPLOYMENT_ENV')
+        string(defaultValue: '10.32.0.37', description: 'Remote grid ip, default: Jenkins ip', name: 'REMOTE_GRID_IP')
+        string(defaultValue: '10.32.0.37', description: 'Remote grid ip, default: Jenkins ip', name: 'MAIN_REMOTE_GRID_IP')
+        booleanParam(defaultValue: false, description: 'Run Sanity subset (Regression)', name: 'SANITY_REGRESSION')
+        string(defaultValue: '', description: 'Optional, replace mvn test command, for example:\n' +
+                'mvn test', name: 'OPTIONAL_MVN_COMMAND')
+    }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '21', daysToKeepStr: '30', artifactDaysToKeepStr: '30'))
+        skipDefaultCheckout true // this is how you avoid the 'Declarative: Checkout SCM' stage
+    }
+    stages {
+        stage('Checkout version branch') {
+            steps {
+                script {
+                    def branch = "master"
+                    env.sanity_subset = ""
+                    branch = '1.5'
+                    if ("${params.OPTIONAL_BRANCH_TO_USE}" != "") {
+                        branch = "${params.OPTIONAL_BRANCH_TO_USE}"
+                    }
+                    if ("${params.SANITY_REGRESSION.toBoolean()}" == "true") {
+                        env.sanity_subset = "-Dcucumber.options=\"--tags @regression\""
+                    }
+                    echo 'Sanity branch to use: ' + branch
+                    git credentialsId: 'github-ssh-shaiaz-privateKey', url: 'git@github.com:rnd-hub/ws_bdd.git', branch: "${branch}"
+                }
+            }
+        }
+        stage('Get slave IP')
+                {
+                    steps {
+                        script {
+                            def git_util = new com.devops.Util()
+                            env.slave_ip = git_util.getWindowsSlaveIP()
+                        }
+                    }
+                }
+        stage("Connect to RDP and run tests in Parallel") {
+            failFast false
+            parallel {
+                stage('Run RDP session') {
+                    agent {label 'always-on'}
+                    steps {
+                        script{
+                            withCredentials([[$class: 'UsernamePasswordMultiBinding',
+                                              credentialsId: 'ws-dev', passwordVariable: "WSDEVPASS", usernameVariable: "WSDEVUSER"]]) {
+                                start_process_ignore_return_code("DISPLAY=:10.0 rdesktop -g 90% -u $WSDEVUSER -p $WSDEVPASS ${env.slave_ip}")
+                            }
+
+                        }
+
+                    }
+                }
+                stage('Run Sanity tests') {
+                    steps {
+                        script {
+                            def err = null
+                            try {
+                                if ("${params.OPTIONAL_MVN_COMMAND}" == "") {
+                                    configFileProvider([configFile(fileId: 'artifactory-maven-global-settings-xml', targetLocation: 'C:\\Users\\ws-dev\\.m2\\settings.xml')]) {
+                                        bat "mvn test ${env.sanity_subset}"
+                                    }
+
+
+                                } else {
+                                    configFileProvider([configFile(fileId: 'artifactory-maven-global-settings-xml', targetLocation: 'C:\\Users\\ws-dev\\.m2\\settings.xml')]) {
+                                        bat "${params.OPTIONAL_MVN_COMMAND}"
+                                    }
+                                }
+                            }catch (caughtError) {
+                                err = caughtError
+                                currentBuild.result = "FAILURE"
+                            }
+                            finally {
+                                bat "type nul > done"
+                                if (err != null) {
+                                    throw err
+                                }
+                            }
+                        }
+
+                    }
+                }
+                stage('Close RDP at tests end') {
+                    steps {
+                        script{
+                            bat "del \"done\" >nul 2>&1"
+                            boolean exists = false
+                            while (!exists)
+                            {
+                                sleep 60
+                                files = findFiles glob: "done"
+                                exists = files.length > 0
+                            }
+                            node('always-on') {
+                                kill_process("${env.slave_ip}")
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+    }
+    post {
+        always {
+            //generate cucumber reports
+            cucumber 'target/cucumber.json'
+        }
+    }
+}
+
+

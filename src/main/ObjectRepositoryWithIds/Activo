@@ -1,0 +1,12 @@
+{
+  "ActivoTitle":"//SPAN[text()='Nuevo inmueble']",
+  "Nombre":"//span[text()='Nombre:']/../..//INPUT",
+  "Tipo":"//*[@class='Select-input']/input",
+  "ActivoId" : "//DIV[@class='entity-id']",
+  "area" : "//label[text()='Área (m²):']/..//input",
+  "description" : "//label[text()='Descripción:']/..//input",
+  "nameView" : "//label[text()='Nombre:']/..//span",
+  "typeView" : "//label[text()='Tipo:']/..//span",
+  "areaView" : "//label[text()='Área (m²):']/..//span",
+  "descriptionView" : "//label[text()='Descripción:']/..//span"
+}

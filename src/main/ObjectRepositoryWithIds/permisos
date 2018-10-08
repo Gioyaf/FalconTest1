@@ -1,0 +1,7 @@
+{
+    "PermissionsForm": "//SPAN[text()='Permisos']",
+    "editPermission":"//SPAN[text()='Editar']",
+    "Name": "(//SPAN[text()='Permisos'])[1]/../../..//SPAN[@class='User__BlueSpan-dXBjMd fzMPzw'][text()='Param']",
+    "Close": "//SPAN[text()='Permisos']/../..//SPAN[@class='Icon__Icon-hlGpYz crEmQL']",
+    "PermissionAddButton":"//*[contains(@title,'All WS User')]/following-sibling::div[@class='ReactVirtualized__Table__rowColumn'][2][1]/div/div/span/span[3]"
+}

@@ -1,0 +1,14 @@
+Case manager and User have full permissions to the case.
+Users we're added to the case with the right permissions (according to the MD)
+The case will start to download to the system.
+Get notification – Case imported successfully
+See the case in the users' dashboard
+Verify:
+-The case is created by imported case.
+-Last modified date matching the import time
+-Classification is as defined in the MD file.
+-Main label- all data is correct according to the MD file.
+All folders from the imported folder are there 
+Verify 
+-the folders info content matches the folders imported
+asddsa

@@ -1,0 +1,41 @@
+{
+  "personInfo" : {
+    "name" : "Pablo",
+    "lastName" : "Escobar"
+  },
+  "address" : {
+    "address" : "Mexico, Mexico, México, Naucalpan de juárez, Naucalpan de juárez Tegucigalpa",
+    "pais" : "Mexico",
+    "estado" : "México",
+    "delegaci" : "Acolman",
+    "colonia" : "Ciudad Nezahualcóyotl",
+    "coorLat" : "19.357589",
+    "coorlong" : "-99.644945"
+  },
+  "arma" : {
+    "tipo" : "Ametralladora",
+    "marca" : "Adi",
+    "serie" : "76541223",
+    "tag"  :  "ASALTO"
+  },
+  "activo" : {
+    "nombre" : "Alejandro",
+    "tipo" : "Casa",
+    "tag"  :  "ASALTO"
+  },
+  "telefono" : {
+    "numero" : "97250558877",
+    "type" : "Casa",
+    "tag"  :  "ASALTO"
+  },
+  "vehiculo" : {
+    "matricula" : "6766676",
+    "tipo" : "Autobus",
+    "tag"  :  "ASALTO"
+  },
+  "organization" : {
+    "company" : "La Familia",
+    "tipo" : "Cartel",
+    "tag"  :  "ASALTO"
+  }
+}

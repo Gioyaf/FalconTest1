@@ -1,0 +1,5 @@
+{
+  "userNameField": "//input[@type='text' and contains(@class,'LoginStyledComponents')]",
+  "passwordField": "//input[@type='password' and contains(@class,'LoginStyledComponents')]",
+  "startSessionButton": "//button[@type='submit']"
+}

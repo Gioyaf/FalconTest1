@@ -1,0 +1,4 @@
+{
+    "Ruler": "//span[@type='filter-rules']",
+    "TagsSelection": "//span[@type='filter-rules-yellow']/../descendant::input"
+}

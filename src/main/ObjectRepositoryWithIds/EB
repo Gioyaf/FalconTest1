@@ -1,0 +1,13 @@
+{
+  "searchRez":"//div[@class='SelectableEntity']",
+  "ebButton":"//div[@class='CaseTabs'] //span[text()='Tablero de exploración']",
+  "EditButton":"//div[@class='toolbarIconContainer'] //*[@type='edit2']",
+  "relationshipTableButton":"//div[@title='Análisis de enlace']",
+  "mapTableButton":"//div[@title='Mapa'] //span[@type='map']",
+  "timeLineTableButton":"//div[@title='Línea de tiempo'] //span[@type='timeline']",
+  "mapLayerButton":"//div[@class='mapButtonContainer'] //span[@type='maps']",
+  "mapLayerStreetButton":"//div[@class='mapChartButtonsContainer'] //div[@title='Street']",
+  "mapLayerOrtoButton":"//div[@class='mapChartButtonsContainer'] //div[@title='Orto Photo']",
+  "klCanvas":"//*[@id='kl']"
+
+}

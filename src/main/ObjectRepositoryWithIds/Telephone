@@ -1,0 +1,13 @@
+{
+  "telephoneNumber": "//span[text()='Número:']/../../input",
+  "telephoneType": "//label[text()='Tipo:']/../descendant::input[2]",
+  "teleType":"//div[@class='Select-input']/input"
+
+  "IMEI": "//label[text()='IMEI:']/../input",
+  "description": "//label[text()='Descripción:']/../input",
+  "numberView" : "//label[text()='Número:']/..//span",
+  "typeView" : "//label[text()='Tipo:']/..//span",
+  "imeiView" : "//label[text()='IMEI:']/..//span",
+  "descriptionView" : "//label[text()='Descripción:']/..//span"
+
+}

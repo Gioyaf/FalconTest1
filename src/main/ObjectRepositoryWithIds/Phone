@@ -1,0 +1,16 @@
+{
+  "loadCallRecords" : "//SPAN[text()='Cargar registros de llamadas']",
+  "linkInput" : "//input[@class='SearchBox__InputCard-eIUwGR jlOQDm']",
+  "fileButton" : "//div[@class='Item__Title-infbIJ cnEXBZ TextWithEllipsis__TextToWidthEllipsis-eoEKNS gSrzGh']",
+  "loadButton" : "//span[text()='Cargar']",
+  "importButton" : "//span[text()='Importar']",
+  "closeButton" : "//span[text()='Cerrar']",
+  "phone1" : "//a[text()='77889966551']",
+  "phone2" : "//a[text()='66332255881']",
+  "phone3" : "//a[text()='44112255881']",
+  "phone8" :"//span[text()='Teléfono 8:']",
+  "closeIcon" : "//span[@type='close']",
+  "phoneId" : "//DIV[@class='entity-id']",
+  "linkInput" : "//input[@class='SearchBox__InputCard-eIUwGR jlOQDm']",
+  "telButton" : "//div[@title='tel']"
+}

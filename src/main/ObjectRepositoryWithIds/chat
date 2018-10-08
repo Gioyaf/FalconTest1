@@ -1,0 +1,19 @@
+{
+  "chatBoxIcon":"//span[@type='message']",
+  "nextButtonTutorial":"//span[text()='Siguiente']",
+  "skipTutorialButton":"//*[@id='app-content']/div/div/div/div[2]/a/span",
+  "textBox":"//textarea[@id='post_textbox']",
+  "offTopic":"//a[text()='Off-Topic']",
+  "offTopicMessage":"//div[@id='post-list']/div[@class='']/div/div[@class='post-list-holder-by-time']/div[@class='post-list__table']/div[@class='post-list__content']/div[63]/div/div//div[@class='']//span[@id='lastPostMessageText']/p",
+  "sendMessageButton":"//*[@id='create_post']/div/div[1]/a/i",
+  "privetChanel":"//*[@id='sidebar-left']/div[4]/ul[2]/li[1]/h4/a",
+  "privetChatMessage":"//div[@id='post-list']/div[@class='']/div/div[@class='post-list-holder-by-time']/div[@class='post-list__table']/div[@class='post-list__content']/div[10]/div/div/div[2]/div/div/div[@class='']//span[@id='lastPostMessageText']/p",
+  "privetChatTextBox":"//*[@id='post_textbox']",
+  "privetChanelName":"/html/body/div[2]/div/div[2]/div/div/form/div[1]/div[2]/div/input",
+  "createPrivetChanelButton":"//span[text()='Crear Nuevo Canal']",
+  "inviteToPrivetChanel":"//*[@id='post-list']/div/div/div[2]/div/div/div/a[1]/span/span",
+  "userInviteTextBox":"/html/body/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div[1]/input",
+  "addMembersButton":"//*[@id='addMembers']/span",
+  "closeAddMembersButton":"/html/body/div[2]/div/div[2]/div/div/div[1]/button/span",
+  "saveButton": "//span[text()='Guardar']"
+}
