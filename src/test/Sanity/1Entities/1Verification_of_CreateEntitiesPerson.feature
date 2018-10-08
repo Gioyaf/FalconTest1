@@ -4,7 +4,7 @@
 # ###############   Login to the system ####################################
   @sanity @person
   Scenario Outline: Log in to WS system
-          ############# LOG - IN start #################
+
     Given navigate to "https://3.213.176.52" on browser
     When type into "login_userNameField" the text "wstu6"
     And type into "login_passwordField" the text "Pass123"
